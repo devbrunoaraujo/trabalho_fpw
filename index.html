@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <!-- Menu Fixo -->
+    <div class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#sobre" onclick="scrollToSection('sobre')">Sobre mim</a></li>
+                <li><a href="#portfolio" onclick="scrollToSection('portfolio')">Portfólio</a></li>
+                <li><a href="#formacao" onclick="scrollToSection('formacao')">Formação</a></li>
+                <li><a href="#cursos" onclick="scrollToSection('cursos')">Cursos extras</a></li>
+                <li><a href="#contato" onclick="scrollToSection('contato')">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h1>Bruno Araújo</h1>
+                <p class="subtitle">Desenvolvedor Full Stack & Designer</p>
+                <p>Transformando ideias em soluções digitais incríveis</p>
+                <a href="#portfolio" onclick="scrollToSection('portfolio')" class="cta-button">Ver meus projetos</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre mim -->
+    <div id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre mim</h2>
+            <p>Sou um desenvolvedor full stack com experiencia em php com laravel e algumas tecnologias do ecossistema laravel, como Sanctum, filament e Livewire.</p>
+            <p>Com experiência em diversas tecnologias, estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+            <p>Adoro trabalhar em equipe e acredito que a colaboração é a chave para o sucesso de qualquer projeto.</p>
+        </div>
+            
+    </div>
+
+    <!-- Portfólio -->
+    <div id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3>Site de revenda de veículos</h3>
+                    <p>Website de revenda de veículos com sistema de login, cadastro e gestão de veículos.</p>
+                    <a href="https://ec2-54-233-48-149.sa-east-1.compute.amazonaws.com/" target="_blank" class="btn-view-more">Ver site</a>
+                </div>
+                <div class="portfolio-card">
+                    <h3>App de Gerenciamento</h3>
+                    <p>Sistema de gestão empresarial com dashboard interativo, relatórios em tempo real e integração com APIs.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formação -->
+    <div id="formacao" class="section">
+        <div class="container">
+            <h2>Formação</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">2025 - Atual</div>
+                    <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                    <p>UNINTER - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2015 - 2017</div>
+                    <h3>Curso Técnico em Informática</h3>
+                    <p>CAPACITAR ESCOLA TÉCNICA - Primeiro contato com programação e desenvolvimento web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Cursos extras -->
+    <div id="cursos" class="section">
+        <div class="container">
+            <h2>Cursos extras</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <h3>JAVA e Spring</h3>
+                    <p>Udemy - Desenvolvimento de aplicações web com Java e Spring.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <h3>Profissional de redes de computadores</h3>
+                    <p>DLTec - Curso completo de redes de computadores e segurança da informação.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <h3>Laravel</h3>
+                    <p>Udemy - Desenvolvimento de aplicações web com Laravel.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <h3>PHP e MySQL</h3>
+                    <p>B7Web - Desenvolvimento de aplicações web com HTML, CSS, Javascript, PHP, MySQL.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <h3>Profissional em Linux</h3>
+                    <p>PD. Tecnologia - Curso completo de administração de sistemas e servidores Linux.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div id="contato" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo para discutir seu próximo projeto!</p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><strong>Email:</strong> dev.brunoaraujo@gmail.com</p>
+                    <p><strong>Telefone:</strong> (53) 99177-7038</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/bruno-araujo-5a0a69264</p>
+                    <p><strong>GitHub:</strong> github.com/devbrunoaraujo</p>
+                    <p><strong>Localização:</strong> Bagé, RS</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie uma mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>
